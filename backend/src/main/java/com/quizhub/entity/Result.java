@@ -23,16 +23,16 @@ public class Result {
     @Column(nullable = false)
     private int total;
 
-    @Column(nullable = false)
+    @Column(name = "time_taken_seconds", nullable = false)
     private int timeTakenSeconds = 0;
 
-    @Column(nullable = false)
+    @Column(name = "xp_earned", nullable = false)
     private int xpEarned = 0;
 
     @Column(length = 100)
     private String badge;
 
-    @Column(nullable = false)
+    @Column(name = "taken_at", nullable = false)
     private LocalDateTime takenAt = LocalDateTime.now();
 
     protected Result() {}

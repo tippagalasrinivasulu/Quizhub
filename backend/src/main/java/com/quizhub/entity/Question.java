@@ -17,19 +17,19 @@ public class Question {
     @Column(nullable = false, columnDefinition = "TEXT")
     private String text;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(name = "option_a", nullable = false, columnDefinition = "TEXT")
     private String optionA;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(name = "option_b", nullable = false, columnDefinition = "TEXT")
     private String optionB;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(name = "option_c", nullable = false, columnDefinition = "TEXT")
     private String optionC;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(name = "option_d", nullable = false, columnDefinition = "TEXT")
     private String optionD;
 
-    @Column(nullable = false)
+    @Column(name = "correct_option", nullable = false)
     private int correctOption; // 0=A, 1=B, 2=C, 3=D
 
     protected Question() {}

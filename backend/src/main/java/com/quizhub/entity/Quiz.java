@@ -22,10 +22,10 @@ public class Quiz {
     @Column(length = 20)
     private String difficulty = "Medium";
 
-    @Column(nullable = false)
+    @Column(name = "duration_minutes", nullable = false)
     private Integer durationMinutes = 5;
 
-    @Column(nullable = false)
+    @Column(name = "is_pyq", nullable = false)
     private Boolean isPyq = false;
 
     @Column(length = 50)
